@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NGO Connect</title>
+    <title>NGO Connect - About Us</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom hover underline animation */
@@ -17,6 +17,18 @@
         }
         .hover-underline:hover::after {
             width: 100%;
+        }
+
+        /* Smooth hover transition */
+        a:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* Smooth button hover */
+        button:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease-in-out;
         }
     </style>
 </head>
@@ -44,15 +56,15 @@
     </header>
 
     <!-- Main Content -->
-    <main class="flex-grow container mx-auto mt-8 p-6">
-        <h2 class="text-3xl font-semibold text-gray-700 mb-4 animate-fade-in-up">About Us</h2>
-        <p class="text-gray-600 leading-loose">
+    <main class="flex-grow container mx-auto mt-8 p-6 fade-in">
+        <h2 class="text-3xl font-semibold text-gray-700 mb-6">About Us</h2>
+        <p class="text-gray-600 leading-loose mb-4">
             NGO Connect is a platform dedicated to bridging the gap between NGOs and those looking to support their causes. We aim to empower communities and enhance the impact of social initiatives.
         </p>
-        <p class="text-gray-600 leading-loose mt-4">
+        <p class="text-gray-600 leading-loose mb-4">
             Our mission is to connect individuals and organizations with the right NGOs, ensuring that every contribution makes a significant difference. We collaborate with a diverse range of NGOs, from those focusing on education and health to environmental conservation and social justice.
         </p>
-        <h3 class="text-2xl font-semibold text-indigo-600 mt-8 animate-fade-in-up">Our Vision</h3>
+        <h3 class="text-2xl font-semibold text-indigo-600 mt-8">Our Vision</h3>
         <p class="text-gray-600 leading-loose mt-4">
             To create a world where every NGO has the resources and support they need to succeed in their mission.
         </p>
