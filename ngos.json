@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Hope Foundation",
+        "subject": "Education & Healthcare",
+        "description": "Focused on providing education and healthcare to underprivileged children."
+    },
+    {
+        "name": "Green Earth",
+        "subject": "Environmental Conservation",
+        "description": "Dedicated to environmental conservation and awareness."
+    },
+    {
+        "name": "Care for All",
+        "subject": "Family Support Services",
+        "description": "Aiding families in crisis by providing food, shelter, and support services."
+    }
+]

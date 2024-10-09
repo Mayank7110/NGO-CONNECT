@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Connect - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom animations and hover effects */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hover-underline:hover {
+            text-decoration: underline;
+        }
+
+        /* Smooth transitions for hover effects */
+        a:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100">
+    <!-- Header with navigation -->
+    <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">NGO Connect</h1>
+            <nav class="space-x-6">
+                <a href="index.html" class="text-white hover-underline">Home</a>
+                <a href="about.html" class="text-white hover-underline">About</a>
+                <a href="donate.html" class="text-white hover-underline">Donate</a>
+                <a href="contact.html" class="text-white hover-underline">Contact</a>
+                <a href="updates.html" class="text-white hover-underline">Updates</a>
+                <a href="register.html" class="text-white hover-underline">Register NGO</a>
+                <a href="ngos.html" class="text-white hover-underline">NGOs</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main class="flex-grow container mx-auto px-4 py-8 fade-in">
+        <section class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-800">Welcome to NGO Connect</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                At NGO Connect, we believe in the power of community. Our platform connects you with various NGOs that are making a difference in the world. Whether you're looking to donate, volunteer, or simply learn more about their causes, we have it all.
+            </p>
+        </section>
+
+        <!-- Featured NGOs section -->
+        <section class="mt-16">
+            <h3 class="text-2xl font-semibold text-gray-700 mb-6 text-center">Featured NGOs</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-xl font-semibold text-blue-600 mb-4">Hope Foundation</h4>
+                    <p class="text-gray-600">Focused on providing education and healthcare to underprivileged children.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-xl font-semibold text-green-600 mb-4">Green Earth</h4>
+                    <p class="text-gray-600">Dedicated to environmental conservation and awareness.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-xl font-semibold text-yellow-600 mb-4">Care for All</h4>
+                    <p class="text-gray-600">Aiding families in crisis by providing food, shelter, and support services.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6 mt-12">
+        <p>&copy; 2024 NGO Connect. All rights reserved.</p>
+        <p class="text-sm text-gray-400 mt-2">Empowering communities through connections and support.</p>
+    </footer>
+</body>
+</html>

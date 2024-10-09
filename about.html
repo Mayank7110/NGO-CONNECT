@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Connect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom hover underline animation */
+        .hover-underline::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width 0.3s;
+        }
+        .hover-underline:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100">
+    <!-- Header with navigation -->
+    <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">NGO Connect</h1>
+            <nav class="space-x-6 hidden sm:flex">
+                <a href="index.html" class="text-white hover-underline">Home</a>
+                <a href="about.html" class="text-white hover-underline">About</a>
+                <a href="donate.html" class="text-white hover-underline">Donate</a>
+                <a href="contact.html" class="text-white hover-underline">Contact</a>
+                <a href="updates.html" class="text-white hover-underline">Updates</a>
+                <a href="register.html" class="text-white hover-underline">Register NGO</a>
+                <a href="ngos.html" class="text-white hover-underline">NGOs</a>
+            </nav>
+            <button class="sm:hidden text-white">
+                <!-- Hamburger Icon for Mobile View -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto mt-8 p-6">
+        <h2 class="text-3xl font-semibold text-gray-700 mb-4 animate-fade-in-up">About Us</h2>
+        <p class="text-gray-600 leading-loose">
+            NGO Connect is a platform dedicated to bridging the gap between NGOs and those looking to support their causes. We aim to empower communities and enhance the impact of social initiatives.
+        </p>
+        <p class="text-gray-600 leading-loose mt-4">
+            Our mission is to connect individuals and organizations with the right NGOs, ensuring that every contribution makes a significant difference. We collaborate with a diverse range of NGOs, from those focusing on education and health to environmental conservation and social justice.
+        </p>
+        <h3 class="text-2xl font-semibold text-indigo-600 mt-8 animate-fade-in-up">Our Vision</h3>
+        <p class="text-gray-600 leading-loose mt-4">
+            To create a world where every NGO has the resources and support they need to succeed in their mission.
+        </p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6 mt-8">
+        <p>&copy; 2024 NGO Connect. All rights reserved.</p>
+        <div class="mt-4 space-x-4">
+            <a href="#" class="hover:text-indigo-400 transition duration-300">Privacy Policy</a>
+            <a href="#" class="hover:text-indigo-400 transition duration-300">Terms of Service</a>
+        </div>
+    </footer>
+
+    <!-- Adding animations using Tailwind CSS plugin -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.5s ease-out',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: 0, transform: 'translateY(20px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        },
+                    },
+                }
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Connect - Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom animations and hover effects */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hover-underline:hover {
+            text-decoration: underline;
+        }
+
+        /* Smooth transitions for hover effects */
+        a:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100">
+    <!-- Header with navigation -->
+    <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">NGO Connect</h1>
+            <nav class="space-x-6">
+                <a href="index.html" class="text-white hover-underline">Home</a>
+                <a href="about.html" class="text-white hover-underline">About</a>
+                <a href="donate.html" class="text-white hover-underline">Donate</a>
+                <a href="contact.html" class="text-white hover-underline">Contact</a>
+                <a href="updates.html" class="text-white hover-underline">Updates</a>
+                <a href="register.html" class="text-white hover-underline">Register NGO</a>
+                <a href="ngos.html" class="text-white hover-underline">NGOs</a>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-grow container mx-auto mt-4 p-4">
+        <h2 class="text-xl font-semibold mb-4">Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to reach out to us through the form below.</p>
+        <form class="mt-6 bg-white p-6 rounded-lg shadow" action="#" method="POST">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium">Full Name</label>
+                <input type="text" id="name" name="name" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md" />
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium">Email</label>
+                <input type="email" id="email" name="email" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md" />
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-sm font-medium">Message</label>
+                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send Message</button>
+        </form>
+    </main>
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>&copy; 2024 NGO Connect. All rights reserved.</p>
+    </footer>
+</body>
+</html>
